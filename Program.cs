@@ -43,7 +43,20 @@ namespace NopLanCompare
                     newElement.SetAttribute("Name", cureentNodeName);
 
                     var innerElement = newDoc.CreateElement("Value");
-                    innerElement.InnerText = node.InnerText;
+
+                    //baidu translation
+                    string transText = node.InnerText;
+
+                    try
+                    {
+                        var tranText = BaiduTranslationService.Translate(node.InnerText);
+
+                        var transResult = JsonHelper.DeserializeJSON<TransResult>(tranText);
+                        transText = transResult.trans_result[0].dst;
+                    }
+                    catch { }
+
+                    innerElement.InnerText = transText;
 
                     newElement.AppendChild(innerElement);
 
