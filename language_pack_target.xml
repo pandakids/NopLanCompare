@@ -1,5 +1,735 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Language Name="简体中文" SupportedVersion="4.20">
+  <LocaleResource Name="Account.Login.Fields.Username">
+    <Value>用户名</Value>
+  </LocaleResource>
+  <LocaleResource Name="ActivityLog.UploadNewIconsArchive">
+    <Value>已上载商店的新Favicon和应用图标存档（ID='{0}'）</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Categories.Display">
+    <Value>显示</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Categories.Fields.ShowOnHomepage">
+    <Value>在主页上显示</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Categories.Fields.ShowOnHomepage.Hint">
+    <Value>检查是否要在主页上显示类别。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Categories.Mappings">
+    <Value>映射</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Manufacturers.Display">
+    <Value>显示</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Manufacturers.Mappings">
+    <Value>映射</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.AssociatedProducts.TryToAddSelfGroupedProduct">
+    <Value>不能将当前组产品添加到相关产品中。添加时忽略了此组产品。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Fields.ShowOnHomepage">
+    <Value>在主页上显示</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Fields.ShowOnHomepage.Hint">
+    <Value>选中可在商店主页上显示此产品。推荐给你最受欢迎的产品。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Import.DatabaseNotContainCategory">
+    <Value>数据库不包含{0}类别</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Import.StoresDontExist">
+    <Value>具有以下名称和/或ID的商店不存在：{ 0 }</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Pictures.Alert.AddNew">
+    <Value>先上传图片。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Pictures.Alert.PictureAdd">
+    <Value>无法添加产品图片。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Price">
+    <Value>价格</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.AttributeCombinations.Alert.FailedGenerate">
+    <Value>生成属性组合时出错。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.SpecificationAttributes.Alert.FailedRetrieving">
+    <Value>检索规范选项失败。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Common.Alert">
+    <Value>问询处</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Common.Alert.Add.Error">
+    <Value>无法添加记录。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Common.Alert.Save.Error">
+    <Value>保存时出错。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Common.Alert.Save.Ok">
+    <Value>已成功保存。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Common.Alert.States.Failed">
+    <Value>无法检索状态。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Common.Ok">
+    <Value>好啊</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Currencies.Alert.Error">
+    <Value>无法更新货币。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.FaviconAndAppIcons.Uploaded">
+    <Value>Favicon和应用程序图标已上载</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Languages.Resources.Fields.Name.Hint">
+    <Value>输入区域设置资源名称。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Languages.Resources.Fields.Value.Hint">
+    <Value>输入区域设置资源值。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.PaymentMethods">
+    <Value>支付方式</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Plugins.ApplyChanges">
+    <Value>重新启动应用程序以应用更改</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Plugins.ApplyChanges.Progress">
+    <Value>正在对插件应用更改…</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Plugins.ChangesApplyAfterReboot">
+    <Value>重新启动应用程序后将应用更改</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Plugins.DiscardChanges">
+    <Value>抛弃变化</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Plugins.DiscardChanges.Progress">
+    <Value>正在放弃插件上的更改…</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.AllSettings.Fields.Name.Hint">
+    <Value>输入设置名称。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.AllSettings.Fields.Store">
+    <Value>商场</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.AllSettings.Fields.Store.Hint">
+    <Value>应用此设置的存储名称。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.AllSettings.Fields.Value.Hint">
+    <Value>输入设定值。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.ExportImportProductUseLimitedToStores">
+    <Value>进出口产品“限店”</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Catalog.ExportImportProductUseLimitedToStores.Hint">
+    <Value>检查产品是否应以“仅限商店”属性出口/进口。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.CustomerUser.PasswordRequireDigit">
+    <Value>密码必须至少有一个数字</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.CustomerUser.PasswordRequireDigit.Hint">
+    <Value>指定密码必须至少有一个数字。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.CustomerUser.PasswordRequireLowercase">
+    <Value>密码必须至少有一个小写字母</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.CustomerUser.PasswordRequireLowercase.Hint">
+    <Value>指定密码必须至少有一个小写。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.CustomerUser.PasswordRequireNonAlphanumeric">
+    <Value>密码必须至少有一个非字母数字字符</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.CustomerUser.PasswordRequireNonAlphanumeric.Hint">
+    <Value>指定密码必须至少有一个非字母数字字符。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.CustomerUser.PasswordRequireUppercase">
+    <Value>密码必须至少有一个大写</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.CustomerUser.PasswordRequireUppercase.Hint">
+    <Value>指定密码必须至少有一个大写。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Gdpr.LogUserProfileChanges">
+    <Value>记录用户配置文件更改</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Gdpr.LogUserProfileChanges.Hint">
+    <Value>选中此项可记录用户配置文件更改（如果在存储中启用了此功能）。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.BlockTitle.FaviconAndAppIcons">
+    <Value>Favicon和应用程序图标</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.BlockTitle.Minification">
+    <Value>缩小</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.CaptchaShowOnForgotPasswordPage">
+    <Value>在忘记密码页上显示</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.CaptchaShowOnForgotPasswordPage.Hint">
+    <Value>当还原密码时，选中此项在忘记密码页上显示验证码。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.DisplayDefaultMenuItemSettings.DisplayHomepageMenuItem">
+    <Value>显示“主页”</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.DisplayDefaultMenuItemSettings.DisplayHomepageMenuItem.Hint">
+    <Value>检查顶部菜单中是否应显示“主页”菜单项。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.EnableHtmlMinification">
+    <Value>HTML缩小</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.EnableHtmlMinification.Hint">
+    <Value>允许您缩小HTML页面并压缩它们，从而提高下载速度。请注意，应用此设置后，需要重新启动应用程序。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.FaviconAndAppIcons.Description">
+    <Value>favicon和app图标是与特定网站或网页关联的小图片。浏览器在页标题之前的选项卡中显示，在选项卡和其他界面元素中显示为书签旁边的图片。您可以在站点根目录中的/icons/samples中看到favicon和app图标存档的示例。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.FaviconAndAppIcons.MissingFile">
+    <Value>找不到文件{0}。此文件是必需的。它包含page head元素的代码。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.FaviconAndAppIcons.UploadIconsArchive">
+    <Value>上传图标存档</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.FaviconAndAppIcons.UploadIconsArchive.Hint">
+    <Value>为不同的操作系统和设备上传带有favicon和app图标的存档文件。您可以在站点根目录中的/icons/samples中看到favicon和app图标存档的示例。您的favicon和app icons路径是“icons/icons{0}”</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.Sitemap.Instructions">
+    <Value>&lt;p&gt;这些设置不适用于site map.xml，仅适用于站点地图。您可以在“所有设置”页上为sitemap.xml配置生成</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SitemapIncludeBlogPosts">
+    <Value>站点地图包括博客文章</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SitemapIncludeBlogPosts.Hint">
+    <Value>检查是否要在站点地图中包含博客文章。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SitemapIncludeNews">
+    <Value>站点地图包含新闻项</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SitemapIncludeNews.Hint">
+    <Value>检查是否要在站点地图中包含新闻项。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SitemapIncludeTopics">
+    <Value>站点地图包括主题</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.SitemapIncludeTopics.Hint">
+    <Value>检查是否要在站点地图中包含主题。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.UseResponseCompression">
+    <Value>使用响应压缩</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.UseResponseCompression.Hint">
+    <Value>启用压缩响应（默认为gzip）。如果在服务器级别配置了活动的IIS动态压缩模块，则可以禁用它。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.ProductEditor.ShowOnHomepage">
+    <Value>在主页上显示</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Shipping.AllowPickupInStore">
+    <Value>“店内取车”已启用</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Shipping.AllowPickupInStore.Hint">
+    <Value>一个值，指示在签出期间是否启用了“在存储中提取”选项。请确保您至少有一个活动的取货点提供商。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Shipping.IgnoreAdditionalShippingChargeForPickupInStore">
+    <Value>忽略店内提货的额外运费</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.Shipping.IgnoreAdditionalShippingChargeForPickupInStore.Hint">
+    <Value>如果您想忽略在商店提货的额外运费，请检查。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.ShoppingCart.GroupTierPricesForDistinctShoppingCartItems">
+    <Value>不同购物车项目的组级价格</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.ShoppingCart.GroupTierPricesForDistinctShoppingCartItems.Hint">
+    <Value>允许在客户购买大量特定产品时提供特殊价格。例如，当一个客户可以为同一个产品拥有两个购物车项目时（不同的产品属性）。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Shipping.Measures.Dimensions.Fields.DisplayOrder.Hint">
+    <Value>此维度的显示顺序。1表示列表的顶部。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Shipping.Measures.Dimensions.Fields.Name.Hint">
+    <Value>输入维度名称。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Shipping.Measures.Dimensions.Fields.Ratio.Hint">
+    <Value>指定标注比例。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Shipping.Measures.Dimensions.Fields.SystemKeyword.Hint">
+    <Value>输入维度系统关键字。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Shipping.Measures.Dimensions.MarkAsPrimaryDimension.Alert.FailedToUpdate">
+    <Value>无法更新维度。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Shipping.Measures.Weights.Fields.DisplayOrder.Hint">
+    <Value>这个重量的显示顺序。1表示列表的顶部。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Shipping.Measures.Weights.Fields.Name.Hint">
+    <Value>输入重量名称。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Shipping.Measures.Weights.Fields.Ratio.Hint">
+    <Value>指定重量比。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Shipping.Measures.Weights.Fields.SystemKeyword.Hint">
+    <Value>输入重量系统关键字。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Shipping.Measures.Weights.MarkAsPrimaryWeight.Alert.FailedToUpdate">
+    <Value>无法更新权重。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Stores.Fields.DefaultLanguage.DefaultItemText">
+    <Value>---</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Tax.Categories.Fields.DisplayOrder.Hint">
+    <Value>此税种的显示顺序。1表示列表的顶部。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Tax.Categories.Fields.Name.Hint">
+    <Value>输入税类名称。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ContentManagement.Blog.BlogPosts.Fields.IncludeInSitemap">
+    <Value>包含在站点地图中</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ContentManagement.Blog.BlogPosts.Fields.IncludeInSitemap.Hint">
+    <Value>选中可将此日志包含在站点地图中。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ContentManagement.Polls.Answers.Fields.DisplayOrder.Hint">
+    <Value>此投票答案的显示顺序。1表示列表的顶部。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ContentManagement.Polls.Answers.Fields.Name.Hint">
+    <Value>输入投票答案名称。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ContentManagement.Polls.Fields.ShowOnHomepage">
+    <Value>在主页上显示</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ContentManagement.Polls.Fields.ShowOnHomepage.Hint">
+    <Value>检查是否要在主页上显示投票。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ContentManagement.Topics.Display">
+    <Value>显示</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.CurrentCarts.CartsAndWishlists">
+    <Value>购物车和心愿单</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.CustomerRolesManagingError">
+    <Value>没有足够的权限管理客户角色。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.Impersonate.Inactive">
+    <Value>此客户不活动</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.Customers.RewardPoints.Alert.HistoryAdd">
+    <Value>无法添加奖励点数。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.GdprLog">
+    <Value>GDPR请求（日志）</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.GdprLog.Fields.CreatedOn">
+    <Value>日期</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.GdprLog.Fields.CustomerInfo">
+    <Value>客户信息</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.GdprLog.Fields.RequestDetails">
+    <Value>请求详细信息</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Customers.GdprLog.Fields.RequestType">
+    <Value>请求类型</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Download.SaveDownloadURL.Alert.FailedSave">
+    <Value>未能保存下载对象。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.Aria.SortAscending">
+    <Value>：激活以对列升序排序</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.Aria.SortDescending">
+    <Value>：激活以按降序排列列</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.EmptyTable">
+    <Value>表中没有可用数据</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.Info">
+    <Value>_项目总数的开始和结束</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.InfoEmpty">
+    <Value>没有记录</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.InfoFiltered">
+    <Value>（从最大条目数筛选）</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.lengthMenu">
+    <Value>显示菜单项</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.LoaderIcon">
+    <Value>&lt;i class=“fa fa refresh fa spin”&gt;&lt;/i&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.LoadingRecords">
+    <Value>加载。。。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.Paginate.First">
+    <Value>弗斯特</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.Paginate.Last">
+    <Value>最后</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.Paginate.Next">
+    <Value>下一个</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.Paginate.Previous">
+    <Value>上一个</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.Processing">
+    <Value>处理。。。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.Search">
+    <Value>搜索：</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.Thousands">
+    <Value>我是说，</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.DT.ZeroRecords">
+    <Value>找不到匹配的记录</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.GiftCards.Fields.GiftCardCouponCode.Alert.FailedGenerate">
+    <Value>无法生成代码。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Orders.OrderNotes.Alert.Add">
+    <Value>无法添加订单说明。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Plugins.Errors.InstallDependsOn">
+    <Value>“{0}”插件依赖于以下必须预先安装的插件：“{1}”</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Plugins.Errors.NotDeleted">
+    <Value>插件“{0}”未删除</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Plugins.Errors.NotInstalled">
+    <Value>插件“{0}”未安装</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Plugins.Errors.NotUninstalled">
+    <Value>插件“{0}”未卸载</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Plugins.Errors.UninstallDependsOn">
+    <Value>下列插件依赖于“{0}”插件，必须事先卸载：“{1}”</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Promotions.Discounts.Requirements.Alert.FailedGetDiscountRequirements">
+    <Value>未能加载要求信息。请刷新页面。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Promotions.Discounts.Requirements.Alert.FailedToSave">
+    <Value>保存需求失败</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports">
+    <Value>报告</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers">
+    <Value>客户报告</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.BestBy.BestByNumberOfOrders">
+    <Value>按订单数量列出的客户</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.BestBy.BestByOrderTotal">
+    <Value>按订单列出的客户总数</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.BestBy.Fields.Customer">
+    <Value>顾客</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.BestBy.Fields.OrderCount">
+    <Value>订单数量</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.BestBy.Fields.OrderTotal">
+    <Value>订单合计</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.CustomerStatistics.Alert.FailedLoad">
+    <Value>未能加载统计信息。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.RegisteredCustomers">
+    <Value>注册客户</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.RegisteredCustomers.Fields.Customers">
+    <Value>计数</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.RegisteredCustomers.Fields.Period">
+    <Value>期间</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.RegisteredCustomers.Fields.Period.14days">
+    <Value>在过去的14天里</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.RegisteredCustomers.Fields.Period.7days">
+    <Value>在过去的7天里</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.RegisteredCustomers.Fields.Period.month">
+    <Value>上个月</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.RegisteredCustomers.Fields.Period.year">
+    <Value>在去年</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Customers.RunReport">
+    <Value>运行报告</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.LowStock">
+    <Value>低库存</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.LowStock.SearchPublished.All">
+    <Value>全部</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.LowStock.SearchPublished.PublishedOnly">
+    <Value>仅发布</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.LowStock.SearchPublished.UnpublishedOnly">
+    <Value>仅未发布</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.Bestsellers">
+    <Value>畅销书</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.Bestsellers.Fields.Name">
+    <Value>姓名</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.Bestsellers.Fields.TotalAmount">
+    <Value>总额（不含税）</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.Bestsellers.Fields.TotalQuantity">
+    <Value>总数量</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.Bestsellers.PaymentStatus">
+    <Value>付款状态</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.Bestsellers.RunReport">
+    <Value>运行报告</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.Country">
+    <Value>国家销售</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.Country.Fields.CountryName">
+    <Value>国家</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.Country.Fields.SumOrders">
+    <Value>订单合计</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.Country.Fields.TotalOrders">
+    <Value>订单数量</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.Country.RunReport">
+    <Value>运行报告</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.NeverSold">
+    <Value>从未购买过的产品</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.NeverSold.Fields.Name">
+    <Value>姓名</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.NeverSold.RunReport">
+    <Value>运行报告</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.NeverSold.SearchCategory">
+    <Value>类别</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Reports.Sales.NeverSold.SearchVendor">
+    <Value>小贩</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.SalesReport.OrderStatistics.Alert.FailedLoad">
+    <Value>未能加载统计信息。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ShoppingCartType.BillingCountry">
+    <Value>计费国家</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ShoppingCartType.BillingCountry.Hint">
+    <Value>按帐单国家筛选。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ShoppingCartType.EndDate">
+    <Value>结束日期</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ShoppingCartType.EndDate.Hint">
+    <Value>搜索的结束日期。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ShoppingCartType.Product">
+    <Value>产品</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ShoppingCartType.Product.Hint">
+    <Value>按特定产品搜索。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ShoppingCartType.StartDate">
+    <Value>开始日期</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ShoppingCartType.StartDate.Hint">
+    <Value>搜索的开始日期。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ShoppingCartType.Store">
+    <Value>商场</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.ShoppingCartType.Store.Hint">
+    <Value>按特定商店搜索。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.SystemInfo.AzureBlobStorageEnabled">
+    <Value>已启用azure blob存储</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.SystemInfo.AzureBlobStorageEnabled.Hint">
+    <Value>指示是否已启用azure blob存储。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.SystemInfo.CurrentStaticCacheManager">
+    <Value>静态缓存管理器名称</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.SystemInfo.CurrentStaticCacheManager.Hint">
+    <Value>指示当前静态缓存管理器名称。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.SystemInfo.RedisEnabled">
+    <Value>已启用redis</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.SystemInfo.RedisEnabled.Hint">
+    <Value>指示是否启用redis。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.SystemInfo.UseRedisForCaching">
+    <Value>使用redis进行缓存</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.SystemInfo.UseRedisForCaching.Hint">
+    <Value>指示是否使用redis进行缓存。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.SystemInfo.UseRedisToStoreDataProtectionKeys">
+    <Value>使用redis存储数据保护密钥</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.SystemInfo.UseRedisToStoreDataProtectionKeys.Hint">
+    <Value>指示是否使用redis存储数据保护密钥。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.SystemInfo.UseRedisToStorePluginsInfo">
+    <Value>使用redis存储插件信息</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.SystemInfo.UseRedisToStorePluginsInfo.Hint">
+    <Value>指示是否使用redis存储插件信息。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Category.DisplayOrder.Hint">
+    <Value>此模板的显示顺序。1表示列表的顶部。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Category.Name.Hint">
+    <Value>输入模板名称。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Category.ViewPath.Hint">
+    <Value>输入模板视图路径。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Manufacturer.DisplayOrder.Hint">
+    <Value>此模板的显示顺序。1表示列表的顶部。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Manufacturer.Name.Hint">
+    <Value>输入模板名称。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Manufacturer.ViewPath.Hint">
+    <Value>输入模板视图路径。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Product.DisplayOrder.Hint">
+    <Value>此模板的显示顺序。1表示列表的顶部。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Product.IgnoredProductTypes.Hint">
+    <Value>为此模板指定忽略的产品类型。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Product.Name.Hint">
+    <Value>输入模板名称。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Product.ViewPath.Hint">
+    <Value>输入模板视图路径。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Topic.DisplayOrder.Hint">
+    <Value>此模板的显示顺序。1表示列表的顶部。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Topic.Name.Hint">
+    <Value>输入模板名称。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Templates.Topic.ViewPath.Hint">
+    <Value>输入模板视图路径。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Warnings.AssemblyHasCollision">
+    <Value>“{0}”程序集发生冲突，应用程序加载了“{1}”程序集，但{2}</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Warnings.PluginRequiredAssembly">
+    <Value>'{0}'插件需要'{1}'程序集</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Warnings.ProxyConnection.Failed">
+    <Value>代理连接失败</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.System.Warnings.ProxyConnection.OK">
+    <Value>代理连接正常</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Vendors.Display">
+    <Value>显示</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Vendors.VendorNotes.Fields.Note.Validation">
+    <Value>供应商备注不能为空。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Checkout.Addresses.Invalid">
+    <Value>你有{0}无效地址</Value>
+  </LocaleResource>
+  <LocaleResource Name="Common.Extensions.RelativeFormat">
+    <Value>{0}以前</Value>
+  </LocaleResource>
+  <LocaleResource Name="Common.RelativeDateTime.Past">
+    <Value>{0}以前</Value>
+  </LocaleResource>
+  <LocaleResource Name="Enums.Nop.Core.Domain.Gdpr.GdprRequestType.ProfileChanged">
+    <Value>用户更改的配置文件</Value>
+  </LocaleResource>
+  <LocaleResource Name="Enums.Nop.Services.Plugins.LoadPluginsMode.All">
+    <Value>全部</Value>
+  </LocaleResource>
+  <LocaleResource Name="Enums.Nop.Services.Plugins.LoadPluginsMode.InstalledOnly">
+    <Value>安装</Value>
+  </LocaleResource>
+  <LocaleResource Name="Enums.Nop.Services.Plugins.LoadPluginsMode.NotInstalledOnly">
+    <Value>未安装</Value>
+  </LocaleResource>
+  <LocaleResource Name="FormattedAttributes.PriceAdjustment">
+    <Value>[{0}{1}{2}]</Value>
+  </LocaleResource>
+  <LocaleResource Name="Homepage">
+    <Value>主页</Value>
+  </LocaleResource>
+  <LocaleResource Name="Homepage.Products">
+    <Value>主打产品</Value>
+  </LocaleResource>
+  <LocaleResource Name="Languages.Selector.Label">
+    <Value>语言选择器</Value>
+  </LocaleResource>
+  <LocaleResource Name="Products.Specs.AttributeName">
+    <Value>属性名</Value>
+  </LocaleResource>
+  <LocaleResource Name="Products.Specs.AttributeValue">
+    <Value>属性值</Value>
+  </LocaleResource>
+  <LocaleResource Name="Reviews.Fields.Rating.Good">
+    <Value>很好</Value>
+  </LocaleResource>
+  <LocaleResource Name="Reviews.Fields.Rating.NotBadNotExcellent">
+    <Value>不错但也不出色</Value>
+  </LocaleResource>
+  <LocaleResource Name="Reviews.Fields.Rating.NotGood">
+    <Value>不好的</Value>
+  </LocaleResource>
+  <LocaleResource Name="ScheduleTasks.Error">
+    <Value>“{0}”计划任务失败，出现“{1}”错误（任务类型：“{2}”）。存储名称：“{3}”。任务运行地址：“{4}”）。</Value>
+  </LocaleResource>
+  <LocaleResource Name="ScheduleTasks.TimeoutError">
+    <Value>已取消计划任务。超时已过期。</Value>
+  </LocaleResource>
+  <LocaleResource Name="ShoppingCart.Discount.CannotBeUsed">
+    <Value>您不能使用此折扣券，因为不符合验证条件</Value>
+  </LocaleResource>
+  <LocaleResource Name="ShoppingCart.DiscountCouponCode.Activated">
+    <Value>优惠券代码（{0}）已激活！折扣将适用于您的订单。</Value>
+  </LocaleResource>
+  <LocaleResource Name="ShoppingCart.DiscountCouponCode.Invalid">
+    <Value>此优惠券代码（{0}）无效或不再可用。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Sitemap.BlogPosts">
+    <Value>博客文章</Value>
+  </LocaleResource>
+  <LocaleResource Name="Sitemap.News">
+    <Value>新闻</Value>
+  </LocaleResource>
+  <LocaleResource Name="Tax.Selector.Label">
+    <Value>税务选择器</Value>
+  </LocaleResource>
+  <LocaleResource Name="Validation.Password.IsNotEmpty">
+    <Value>密码是必需的。</Value>
+  </LocaleResource>
+  <LocaleResource Name="Validation.Password.LengthValidation">
+    <Value>&lt;li&gt;必须至少有{0}个字符&lt;/li&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="Validation.Password.RequireDigit">
+    <Value>&lt;li&gt;必须至少有一个数字&lt;/li&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="Validation.Password.RequireLowercase">
+    <Value>&lt;li&gt;必须至少有一个小写&lt;/li&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="Validation.Password.RequireNonAlphanumeric">
+    <Value>&lt;li&gt;必须至少有一个特殊字符（例如？！@$%^&amp;*-）&lt;/li&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="Validation.Password.RequireUppercase">
+    <Value>&lt;li&gt;必须至少有一个大写&lt;/li&gt;</Value>
+  </LocaleResource>
+  <LocaleResource Name="Validation.Password.Rule">
+    <Value>&lt;p&gt;必须满足以下规则：&lt;/p&gt;&lt;ul&gt;{0}{1}{2}{3}{4}&lt;/ul&gt;</Value>
+  </LocaleResource>
+  
   <LocaleResource Name="Account.AccountActivation">
     <Value>激活帐户</Value>
   </LocaleResource>
@@ -811,7 +1541,7 @@
     <Value>添加了新的商品属性('{0}')</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.AddNewReviewType">
-    <Value>添加新的评审类型（ID= { 0 }）</Value>
+    <Value>添加新的评审类型（ID= {0}）</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.AddNewSetting">
     <Value>添加了新的设置('{0}')</Value>
@@ -832,10 +1562,10 @@
     <Value>添加了新的供应商(ID = {0})</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.AddNewVendorAttribute">
-    <Value>添加了一个新的供应商属性（ID= { 0 }）</Value>
+    <Value>添加了一个新的供应商属性（ID= {0}）</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.AddNewVendorAttributeValue">
-    <Value>添加了一个新的供应商属性值（ID= { 0 }）</Value>
+    <Value>添加了一个新的供应商属性值（ID= {0}）</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.AddNewWarehouse">
     <Value>添加了新的仓库(ID = {0})</Value>
@@ -937,7 +1667,7 @@
     <Value>删除了退货请求(编号：{0})</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.DeleteReviewType">
-    <Value>删除一个回顾类型（ID= { 0 }）</Value>
+    <Value>删除一个回顾类型（ID= {0}）</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.DeleteSetting">
     <Value>删除了设置('{0}')</Value>
@@ -961,10 +1691,10 @@
     <Value>删除了供应商(ID = {0})</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.DeleteVendorAttribute">
-    <Value>删除供应商属性（ID= { 0 }）</Value>
+    <Value>删除供应商属性（ID= {0}）</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.DeleteVendorAttributeValue">
-    <Value>删除供应商属性值（ID= { 0 }）</Value>
+    <Value>删除供应商属性值（ID= {0}）</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.DeleteWarehouse">
     <Value>删除了仓库(ID = {0})</Value>
@@ -1066,7 +1796,7 @@
     <Value>编辑了退货请求(编号：{0})</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.EditReviewType">
-    <Value>编辑一个回顾类型（ID= { 0 }）</Value>
+    <Value>编辑一个回顾类型（ID= {0}）</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.EditSettings">
     <Value>编辑了设置</Value>
@@ -1090,10 +1820,10 @@
     <Value>编辑了供应商(ID = {0})</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.EditVendorAttribute">
-    <Value>编辑供应商属性（ID= { 0 }）</Value>
+    <Value>编辑供应商属性（ID= {0}）</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.EditVendorAttributeValue">
-    <Value>编辑供应商属性值（ID= { 0 }）</Value>
+    <Value>编辑供应商属性值（ID= {0}）</Value>
   </LocaleResource>
   <LocaleResource Name="ActivityLog.EditWarehouse">
     <Value>编辑了仓库(ID = {0})</Value>
@@ -2701,7 +3431,7 @@
     <Value>编辑商品</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.ExceededMaximumNumber">
-    <Value>超过了商品允许的最大数量（{ 0 }）</Value>
+    <Value>超过了商品允许的最大数量（{0}）</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.Fields.AclCustomerRoles">
     <Value>客户角色</Value>
@@ -3292,7 +4022,7 @@
     <Value>商品库存单位（SKU）。您可以用来跟踪此商品的内部唯一标识符。</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.Fields.Sku.Reserved">
-    <Value>输入的SKU已经为产品“{ 0 }”预留。</Value>
+    <Value>输入的SKU已经为产品“{0}”预留。</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.Fields.StockQuantity">
     <Value>库存数量</Value>
@@ -3604,7 +4334,7 @@
     <Value>*-必需属性</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.AttributeCombinations.SelectRequiredAttributes">
-    <Value>有必要的属性：{ 0 }</Value>
+    <Value>有必要的属性：{0}</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes">
     <Value>属性</Value>
@@ -13765,7 +14495,7 @@
     <Value>关键字</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.SEO.SeName.MaxLengthValidation">
-    <Value>搜索长度最长为{ 0 }字符</Value>
+    <Value>搜索长度最长为{0}字符</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Settings.ReviewType">
     <Value>评审类型</Value>
@@ -17413,7 +18143,7 @@
     <Value>检查是否启用沙箱（测试环境）。</Value>
   </LocaleResource>
   <LocaleResource Name="Plugins.Payments.PayPalStandard.Instructions">
-    <Value>&lt;P&gt; &lt; B&gt;如果您使用这个网关确保您的主要存储货币由Paypal支持。&lt;/B&gt;&lt;BR/&gt;&lt;BR/&gt;使用PDT，您必须激活PDT并自动返回您的PayPal帐户配置文件。您还必须获取PDT标识令牌，它用于您发送到PayPal的所有PDT通信中。按照以下步骤为PDT配置帐户：&lt;br/&gt;&lt;br/&gt;1。登录到您的PayPal帐户（点击&lt;a href="https://www.paypal.com/us/webapps/mpp/referral/paypal-business-account2?partner_id=9JJPJNNPQ7PZ8" target="_blank"&gt;here&lt;/a&gt;以创建您的帐户)。&lt;br/&gt;2。单击配置子选项卡。&lt;BR/&gt; 3。在“卖方偏好”列中单击“网站付款偏好”。&lt;br /&gt;4。在“网站付款自动返回”下，单击“开启”单选按钮。&lt;br/&gt;5。对于返回URL，输入您的站点上的URL，该URL将在客户支付（{ 0 }）之后接收由PayPal发布的交易ID。&lt;br /&gt;6。在“支付数据传输”下，单击“开启”单选按钮。&lt;br/&gt;7。单击Save. &lt;BR/&gt; 8。在“卖方偏好”列中单击“网站付款偏好”。&lt;br /&gt;9。向下滚动到页面的付款数据传输部分，以查看您的PDT身份令牌。&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</Value>
+    <Value>&lt;P&gt; &lt; B&gt;如果您使用这个网关确保您的主要存储货币由Paypal支持。&lt;/B&gt;&lt;BR/&gt;&lt;BR/&gt;使用PDT，您必须激活PDT并自动返回您的PayPal帐户配置文件。您还必须获取PDT标识令牌，它用于您发送到PayPal的所有PDT通信中。按照以下步骤为PDT配置帐户：&lt;br/&gt;&lt;br/&gt;1。登录到您的PayPal帐户（点击&lt;a href="https://www.paypal.com/us/webapps/mpp/referral/paypal-business-account2?partner_id=9JJPJNNPQ7PZ8" target="_blank"&gt;here&lt;/a&gt;以创建您的帐户)。&lt;br/&gt;2。单击配置子选项卡。&lt;BR/&gt; 3。在“卖方偏好”列中单击“网站付款偏好”。&lt;br /&gt;4。在“网站付款自动返回”下，单击“开启”单选按钮。&lt;br/&gt;5。对于返回URL，输入您的站点上的URL，该URL将在客户支付（{0}）之后接收由PayPal发布的交易ID。&lt;br /&gt;6。在“支付数据传输”下，单击“开启”单选按钮。&lt;br/&gt;7。单击Save. &lt;BR/&gt; 8。在“卖方偏好”列中单击“网站付款偏好”。&lt;br /&gt;9。向下滚动到页面的付款数据传输部分，以查看您的PDT身份令牌。&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</Value>
   </LocaleResource>
   <LocaleResource Name="Plugins.Payments.PayPalStandard.PaymentMethodDescription">
     <Value>您将被重定向到PayPal网站完成付款</Value>
@@ -17497,7 +18227,7 @@
     <Value>使用存储卡令牌付费</Value>
   </LocaleResource>
   <LocaleResource Name="Plugins.Payments.Square.Fields.StoredCard.Mask">
-    <Value>＊{ 0 }</Value>
+    <Value>＊{0}</Value>
   </LocaleResource>
   <LocaleResource Name="Plugins.Payments.Square.Fields.StoredCard.SelectCard">
     <Value>选择卡片</Value>
@@ -18736,7 +19466,7 @@
     <Value>注册获得积分</Value>
   </LocaleResource>
   <LocaleResource Name="RewardPoints.Message.Expired">
-    <Value>{ 0 }未使用的奖励积分已过期。</Value>
+    <Value>{0}未使用的奖励积分已过期。</Value>
   </LocaleResource>
   <LocaleResource Name="RewardPoints.Message.RedeemedForOrder">
     <Value>使用积分支付订单，订单编号：＃{0}</Value>
@@ -19054,7 +19784,7 @@
     <Value>租赁起始日期应该是将来的日期</Value>
   </LocaleResource>
   <LocaleResource Name="ShoppingCart.RequiredProductUpdateWarning">
-    <Value>该产品在{ 0 }的数量上是必需的。</Value>
+    <Value>该产品在{0}的数量上是必需的。</Value>
   </LocaleResource>
   <LocaleResource Name="ShoppingCart.RequiredProductWarning">
     <Value>添加商品到购物车失败</Value>
